@@ -8,7 +8,7 @@ import traceback
 NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
-if init():
+def init():
     py = get_ext_dir("py")
     files = glob.glob("*.py", root_dir=py, recursive=False)
 
@@ -26,5 +26,5 @@ if init():
         except Exception as e:
             traceback.print_exc()
 
-
+init()
 __all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]
