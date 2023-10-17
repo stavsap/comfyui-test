@@ -9,7 +9,8 @@ NODE_CLASS_MAPPINGS = {}
 NODE_DISPLAY_NAME_MAPPINGS = {}
 
 def init():
-    py = get_ext_dir("py")
+    py = os.path.dirname(__file__)
+    py = os.path.abspath(dir)
     files = glob.glob("*.py", root_dir=py, recursive=False)
 
     for file in files:
