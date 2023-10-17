@@ -1,6 +1,6 @@
-class Example:
+class Test:
     """
-    A example node
+    A test node
 
     Class methods
     -------------
@@ -76,7 +76,7 @@ class Example:
 
     #OUTPUT_NODE = False
 
-    CATEGORY = "StavExample"
+    CATEGORY = "MyTestCATEGORY"
 
     def test(self, image, string_field, int_field, float_field, print_to_screen):
         if print_to_screen == "enable":
@@ -93,10 +93,10 @@ class Example:
 # A dictionary that contains all nodes you want to export with their names
 # NOTE: names should be globally unique
 NODE_CLASS_MAPPINGS = {
-    "Example": Example
+    "Test": Test
 }
 
 # A dictionary that contains the friendly/humanly readable titles for the nodes
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "Example": "Example Node"
+    "Test": "Test Node"
 }
